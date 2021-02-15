@@ -1,0 +1,26 @@
+body {
+    
+    align-content: center;
+}
+body header img {
+    display: block;
+    margin: auto;
+}
+body header h1 {
+    text-align: center;
+}
+.p1{
+  text-align: center;
+  background-color: aqua;
+  color: brown;
+}
+li:nth-child(odd) {
+background-color: chocolate;
+}
+li:nth-child(even) {
+    background-color: rgb(82, 221, 47);
+    }
+main ul li {
+    text-align: center;
+    list-style: none;
+}

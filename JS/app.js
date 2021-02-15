@@ -29,7 +29,7 @@ if (mySport.toLowerCase() === 'yes' || mySport.toLowerCase() === 'y'){
   alert('It is ok you will do good next time');
 }
 
-let myAnimal = prompt('Are cats my favorite animal?(Yes/No)Are mansaf and shawarma my favorite traditional food?');
+let myAnimal = prompt('Are mansaf and shawarma my favorite traditional food?(Yes/No)');
 console.log(myAnimal);
 if (myAnimal.toLowerCase() === 'yes' || myAnimal.toLowerCase() === 'y'){
   alert('Thats right you are amazing');

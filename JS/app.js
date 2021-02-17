@@ -12,7 +12,7 @@ if (myAge.toUpperCase() === 'YES' || myAge.toLowerCase() === 'y'){
   alert('Thats right you have done good');
   console.log(Score++);
 
-} else {
+} else if (myAge.toLowerCase() === 'no' || myAge.toLowerCase() === 'n') {
   alert('It is ok it is Hard to gusse some time');
 }
 
@@ -22,7 +22,7 @@ console.log(myCity);
 if (myCity.toLowerCase() === 'yes' || myCity.toLowerCase() === 'y'){
   alert('Thats right you are amazing');
   console.log(Score++);
-} else {
+} else if (myCity.toLowerCase() === 'no' || myCity.toLowerCase() === 'n'){
   alert('It is ok you will do good next time');
 }
 
@@ -31,7 +31,7 @@ console.log(mySport);
 if (mySport.toLowerCase() === 'yes' || mySport.toLowerCase() === 'y'){
   alert('Thats right you are amazing');
   console.log(Score++);
-} else {
+} else if (mySport.toLowerCase() === 'no' || mySport.toLowerCase() === 'n') {
   alert('It is ok you will do good next time');
 }
 
@@ -40,7 +40,7 @@ console.log(myAnimal);
 if (myAnimal.toLowerCase() === 'yes' || myAnimal.toLowerCase() === 'y'){
   alert('Thats right you are amazing');
   console.log(Score++);
-} else {
+} else if (myAnimal.toLowerCase() === 'no' || myAnimal.toLowerCase() === 'n') {
   alert('It is ok you will do good next time');
 }
 let myFood = prompt('Are mansaf and shawarma my favorite traditional food?(Yes/No)or (y/n)');
@@ -48,29 +48,29 @@ console.log(myFood);
 if (myFood.toLowerCase() === 'yes' || myFood.toLowerCase() === 'y'){
   alert('Thats right you are amazing');
   console.log(Score++);
-} else {
+} else if (myFood.toLowerCase() === 'no' || myFood.toLowerCase() === 'n'){
   alert('It is ok you will do good next time');
 }
 
-let myBNumber = prompt('Guess My Best Number( give me a number');
+let myBNumber = Number(prompt('Guess My Best Number( give me a number)'));
 console.log(myBNumber);
 
 let i=0;
-while(myBNumber !== '7' && i !==3){
-  if(myBNumber > '7'){
+while(myBNumber !== 7 && i !==3){
+  if(myBNumber > 7){
     alert('guess is  high');
-  }else if ( myBNumber < '7'){
+  }else if ( myBNumber < 7){
     alert ('guess is  low');
   }
-  prompt('Guess My Best Number( give me a number');
+  myBNumber =Number(prompt('Guess My Best Number( give me a number)')) ;
   i++;
 }
 console.log(i);
-if (myBNumber !== '7'){
-  alert('The right answer is (7) sorry for this qustion your answer is wrong you have trid '+ i +' times to answer it good luke next time')
+if (myBNumber !== 7){
+  alert('The right answer is (7) sorry for this qustion your answer is wrong you have trid '+ i +' times to answer it good luke next time');
 }
 console.log(myBNumber);
-if (myBNumber ==='7'){
+if (myBNumber === 7){
   alert('correct the anser is 7 you have tride ' + i + ' times ');
   Score++;
 }

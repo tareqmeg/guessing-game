@@ -83,7 +83,7 @@ let y=1;
 
 while(multiAnswer !== answerArr[0] && multiAnswer !== answerArr[1] && multiAnswer !== answerArr[2] && y !==6){
 
-  prompt('Give a name to one of the most popular types of credit cards?');
+  multiAnswer = prompt('Give a name to one of the most popular types of credit cards?');
   y++;
 }
 console.log(multiAnswer);

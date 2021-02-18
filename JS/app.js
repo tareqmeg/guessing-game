@@ -55,8 +55,8 @@ if (myFood.toLowerCase() === 'yes' || myFood.toLowerCase() === 'y'){
 let myBNumber = Number(prompt('Guess My Best Number( give me a number)'));
 console.log(myBNumber);
 
-let i=0;
-while(myBNumber !== 7 && i !==3){
+let i=1;
+while(myBNumber !== 7 && i !==4){
   if(myBNumber > 7){
     alert('guess is  high');
   }else if ( myBNumber < 7){
@@ -67,11 +67,11 @@ while(myBNumber !== 7 && i !==3){
 }
 console.log(i);
 if (myBNumber !== 7){
-  alert('The right answer is (7) sorry for this qustion your answer is wrong you have trid '+ (i+1) +' times to answer it good luke next time');
+  alert('The right answer is (7) sorry for this qustion your answer is wrong you have trid '+ i +' times to answer it good luke next time');
 }
 console.log(myBNumber);
 if (myBNumber === 7){
-  alert('correct the anser is 7 you have tride ' + (i+1) + ' times ');
+  alert('correct the anser is 7 you have tride ' + i + ' times ');
   Score++;
 }
 let multiAnswer = prompt('Give a name to one of the most popular types of credit cards?');
@@ -79,9 +79,9 @@ multiAnswer.toLowerCase();
 console.log(multiAnswer);
 let answerArr = ['visa', 'mastercard', 'discover'];
 
-let y=0;
+let y=1;
 
-while(multiAnswer !== answerArr[0] && multiAnswer !== answerArr[1] && multiAnswer !== answerArr[2] && y !==5){
+while(multiAnswer !== answerArr[0] && multiAnswer !== answerArr[1] && multiAnswer !== answerArr[2] && y !==6){
 
   prompt('Give a name to one of the most popular types of credit cards?');
   y++;
@@ -96,7 +96,7 @@ if(multiAnswer === answerArr[0] || multiAnswer === answerArr[1] || multiAnswer =
 if (multiAnswer === answerArr[0] || multiAnswer === answerArr[1] || multiAnswer === answerArr[2]){
   alert('Good job the right answer for this qustion is  ,'+ answerArr[0] +', '+ answerArr[1]+', '+answerArr[2]);
 } else{
-  alert('your answer is wrong you have tride '+ (y+1) + ' times the right answer is  ,'+ answerArr[0] +', '+ answerArr[1]+', '+answerArr[2]);
+  alert('your answer is wrong you have tride '+ y + ' times the right answer is  ,'+ answerArr[0] +', '+ answerArr[1]+', '+answerArr[2]);
 }
 
 

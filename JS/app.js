@@ -7,85 +7,119 @@ let Score = 0;
 let myAge = prompt('Is my age 29?(Yes/No)or (y/n)');
 
 console.log(myAge);
+let q1= function(age){
 
-if (myAge.toUpperCase() === 'YES' || myAge.toLowerCase() === 'y'){
-  alert('Thats right you have done good');
-  console.log(Score++);
+  if (age.toUpperCase() === 'YES' || age.toLowerCase() === 'y'){
+    alert('Thats right you have done good');
+  } else if (age.toLowerCase() === 'no' || age.toLowerCase() === 'n') {
+    alert('It is ok it is Hard to gusse some time');
+  }
 
-} else if (myAge.toLowerCase() === 'no' || myAge.toLowerCase() === 'n') {
-  alert('It is ok it is Hard to gusse some time');
-}
+};
+q1(myAge);
+
 
 let myCity = prompt('Is Irbid the city of my birth?(Yes/No)or (y/n)');
 console.log(myCity);
 
-if (myCity.toLowerCase() === 'yes' || myCity.toLowerCase() === 'y'){
-  alert('Thats right you are amazing');
-  console.log(Score++);
-} else if (myCity.toLowerCase() === 'no' || myCity.toLowerCase() === 'n'){
-  alert('It is ok you will do good next time');
-}
+let q2= function(city){
+  if (city.toLowerCase() === 'yes' || city.toLowerCase() === 'y'){
+    alert('Thats right you are amazing');
+    console.log(Score++);
+  } else if (city.toLowerCase() === 'no' || city.toLowerCase() === 'n'){
+    alert('It is ok you will do good next time');
+  }
+};
+q2(myCity);
+
 
 let mySport = prompt('Is swimming my favorite sport?(Yes/No)or (y/n)');
 console.log(mySport);
-if (mySport.toLowerCase() === 'yes' || mySport.toLowerCase() === 'y'){
-  alert('Thats right you are amazing');
-  console.log(Score++);
-} else if (mySport.toLowerCase() === 'no' || mySport.toLowerCase() === 'n') {
-  alert('It is ok you will do good next time');
-}
+let q3 = function(sport){
+  if (sport.toLowerCase() === 'yes' || sport.toLowerCase() === 'y'){
+    alert('Thats right you are amazing');
+    console.log(Score++);
+  } else if (sport.toLowerCase() === 'no' || sport.toLowerCase() === 'n') {
+    alert('It is ok you will do good next time');
+  }
+};
+q3(mySport);
+
 
 let myAnimal = prompt('Do i Love Cats (yes/no) or (y/n)or (y/n)');
 console.log(myAnimal);
-if (myAnimal.toLowerCase() === 'yes' || myAnimal.toLowerCase() === 'y'){
-  alert('Thats right you are amazing');
-  console.log(Score++);
-} else if (myAnimal.toLowerCase() === 'no' || myAnimal.toLowerCase() === 'n') {
-  alert('It is ok you will do good next time');
-}
+
+let q4 = function( animal){
+  if (animal.toLowerCase() === 'yes' || animal.toLowerCase() === 'y'){
+    alert('Thats right you are amazing');
+    console.log(Score++);
+  } else if (animal.toLowerCase() === 'no' || animal.toLowerCase() === 'n') {
+    alert('It is ok you will do good next time');
+  }
+};
+q4(myAnimal);
+
+
 let myFood = prompt('Are mansaf and shawarma my favorite traditional food?(Yes/No)or (y/n)');
 console.log(myFood);
-if (myFood.toLowerCase() === 'yes' || myFood.toLowerCase() === 'y'){
-  alert('Thats right you are amazing');
-  console.log(Score++);
-} else if (myFood.toLowerCase() === 'no' || myFood.toLowerCase() === 'n'){
-  alert('It is ok you will do good next time');
-}
 
-let myBNumber = Number(prompt('Guess My Best Number( give me a number)'));
-console.log(myBNumber);
+let q5 = function(food){
+  if (food.toLowerCase() === 'yes' || food.toLowerCase() === 'y'){
+    alert('Thats right you are amazing');
+    console.log(Score++);
+  } else if (food.toLowerCase() === 'no' || food.toLowerCase() === 'n'){
+    alert('It is ok you will do good next time');
+  }
+};
+q5(myFood);
+
+
+let mybestNumber = Number(prompt('Guess My Best Number( give me a number)'));
+console.log(mybestNumber);
 
 let i=1;
-while(myBNumber !== 7 && i !==4){
-  if(myBNumber > 7){
-    alert('guess is  high');
-  }else if ( myBNumber < 7){
-    alert ('guess is  low');
+let q6 = function(number){
+  while(number !== 7 && i !==4){
+    if(number > 7){
+      alert('guess is  high');
+    }else if ( number < 7){
+      alert ('guess is  low');
+    }
+    number = Number(prompt('Guess My Best Number( give me a number)')) ;
+    i++;
   }
-  myBNumber =Number(prompt('Guess My Best Number( give me a number)')) ;
-  i++;
-}
+};
+q6(mybestNumber);
+
 console.log(i);
-if (myBNumber !== 7){
+if (mybestNumber !== 7){
   alert('The right answer is (7) sorry for this qustion your answer is wrong you have trid '+ i +' times to answer it good luke next time');
 }
-console.log(myBNumber);
-if (myBNumber === 7){
+console.log(mybestNumber);
+if (mybestNumber === 7){
   alert('correct the anser is 7 you have tride ' + i + ' times ');
   Score++;
 }
+
 let multiAnswer = prompt('Give a name to one of the most popular types of credit cards?');
 multiAnswer.toLowerCase();
 console.log(multiAnswer);
+
+
 let answerArr = ['visa', 'mastercard', 'discover'];
 
 let y=1;
 
-while(multiAnswer !== answerArr[0] && multiAnswer !== answerArr[1] && multiAnswer !== answerArr[2] && y !==6){
+let q7 = function(cardName){
+  while(cardName !== answerArr[0] && cardName !== answerArr[1] && cardName !== answerArr[2] && y !==6){
 
-  multiAnswer = prompt('Give a name to one of the most popular types of credit cards?');
-  y++;
-}
+    cardName = prompt('Give a name to one of the most popular types of credit cards?');
+    y++;
+  }
+};
+q7(multiAnswer);
+
+
 console.log(multiAnswer);
 console.log(y);
 

@@ -1,5 +1,8 @@
 body {
-    
+    background-color: rgb(57, 121, 185);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
     align-content: center;
 }
 body header img {
@@ -8,6 +11,8 @@ body header img {
 }
 body header h1 {
     text-align: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .p1{
   text-align: center;
@@ -15,24 +20,28 @@ body header h1 {
   color: brown;
 }
 ul li:nth-child(odd) {
-background-color: chocolate;
+background-color: rgb(30, 210, 195);
 border-style: dotted;
+height: 30px;
+font-family: Arial, Helvetica, sans-serif;
 }
 ul li:nth-child(even) {
-    background-color: rgb(82, 221, 47);
+    background-color: rgb(221, 47, 47);
     border-style: double;
+    height: 30px;
+    font-family: helvetica;
+    color: rgb(30, 210, 195);
+    text-align: center;
     }
 main ul li {
+    
     text-align: center;
     list-style: none;
 }
 
 main ol li {
-    list-style-type: upper-roman;
+    list-style: none;
     background: #cce5ff;
     margin: 5px;
-}
-html{
-    background-image: url(img/file-20180619-126566-1jxjod2.jpg);
-    
+    text-align: center;
 }

@@ -1,16 +1,17 @@
 'use strict';
 let greetMasseage = prompt('Enter your name please :)');
-console.log(greetMasseage);
+
 alert('welcome ' + greetMasseage +' you are about to answer few qustions about me hope you like it once you ready click OK');
 
 let Score = 0;
 let myAge = prompt('Is my age 29?(Yes/No)or (y/n)');
 
-console.log(myAge);
+
 let q1= function(age){
 
   if (age.toUpperCase() === 'YES' || age.toLowerCase() === 'y'){
     alert('Thats right you have done good');
+    Score++;
   } else if (age.toLowerCase() === 'no' || age.toLowerCase() === 'n') {
     alert('It is ok it is Hard to gusse some time');
   }
@@ -20,12 +21,12 @@ q1(myAge);
 
 
 let myCity = prompt('Is Irbid the city of my birth?(Yes/No)or (y/n)');
-console.log(myCity);
+
 
 let q2= function(city){
   if (city.toLowerCase() === 'yes' || city.toLowerCase() === 'y'){
     alert('Thats right you are amazing');
-    console.log(Score++);
+    Score++;
   } else if (city.toLowerCase() === 'no' || city.toLowerCase() === 'n'){
     alert('It is ok you will do good next time');
   }
@@ -34,11 +35,11 @@ q2(myCity);
 
 
 let mySport = prompt('Is swimming my favorite sport?(Yes/No)or (y/n)');
-console.log(mySport);
+
 let q3 = function(sport){
   if (sport.toLowerCase() === 'yes' || sport.toLowerCase() === 'y'){
     alert('Thats right you are amazing');
-    console.log(Score++);
+    Score++;
   } else if (sport.toLowerCase() === 'no' || sport.toLowerCase() === 'n') {
     alert('It is ok you will do good next time');
   }
@@ -52,7 +53,7 @@ console.log(myAnimal);
 let q4 = function( animal){
   if (animal.toLowerCase() === 'yes' || animal.toLowerCase() === 'y'){
     alert('Thats right you are amazing');
-    console.log(Score++);
+    Score++;
   } else if (animal.toLowerCase() === 'no' || animal.toLowerCase() === 'n') {
     alert('It is ok you will do good next time');
   }
@@ -61,12 +62,12 @@ q4(myAnimal);
 
 
 let myFood = prompt('Are mansaf and shawarma my favorite traditional food?(Yes/No)or (y/n)');
-console.log(myFood);
+
 
 let q5 = function(food){
   if (food.toLowerCase() === 'yes' || food.toLowerCase() === 'y'){
     alert('Thats right you are amazing');
-    console.log(Score++);
+    Score++;
   } else if (food.toLowerCase() === 'no' || food.toLowerCase() === 'n'){
     alert('It is ok you will do good next time');
   }
@@ -75,7 +76,7 @@ q5(myFood);
 
 
 let mybestNumber = Number(prompt('Guess My Best Number( give me a number)'));
-console.log(mybestNumber);
+
 
 let i=1;
 let q6 = function(number){
@@ -91,11 +92,11 @@ let q6 = function(number){
 };
 q6(mybestNumber);
 
-console.log(i);
+
 if (mybestNumber !== 7){
   alert('The right answer is (7) sorry for this qustion your answer is wrong you have trid '+ i +' times to answer it good luke next time');
 }
-console.log(mybestNumber);
+
 if (mybestNumber === 7){
   alert('correct the anser is 7 you have tride ' + i + ' times ');
   Score++;
@@ -103,7 +104,7 @@ if (mybestNumber === 7){
 
 let multiAnswer = prompt('Give a name to one of the most popular types of credit cards?');
 multiAnswer.toLowerCase();
-console.log(multiAnswer);
+
 
 
 let answerArr = ['visa', 'mastercard', 'discover'];
@@ -120,8 +121,6 @@ let q7 = function(cardName){
 q7(multiAnswer);
 
 
-console.log(multiAnswer);
-console.log(y);
 
 if(multiAnswer === answerArr[0] || multiAnswer === answerArr[1] || multiAnswer === answerArr[2]){
   Score++;
